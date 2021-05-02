@@ -1,7 +1,7 @@
 # tienda-web-sencilla-con-javascript
 Una tienda web que permite registrar usuarios, productos y ventas, realice este programa mientras estudiaba en el ciclo superior de desarrollo de aplicaciones web.
 
-##Descripción
+## Descripción
 
 Esta web permite la creacion de usuarios y productos, para luego poder relalizar ventas utilizando los datos anteriormente proporcionados.
 
