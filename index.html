@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="estilos.css" rel="stylesheet" type="text/css" >
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clientes</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="clientes">
+            <h1>Area de Clientes</h1>
+                <table id="tabla_clientes">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>DNI</th>
+                            <th>Cumpleaños</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenido">
+        
+                    </tbody>
+                </table>
+            </div>
+
+        <div id="formulario_registro">
+            <form id="form_registro" action="">
+                <h2>Formulario de registro</h2>
+                <label for="nombre">Nombre: </label> <input type="text"  name="nombre" placeholder="Nombre" />
+                <label for="ape">Apellidos: </label> <input type="text"  name="ape" placeholder="Apellido" />
+                <label for="dni">DNI: </label> <input type="text"  name="dni" placeholder="12345678T" />
+                <label for="f_nac">Fecha de Nacimiento: </label> <input type="date"   name="f_nac" placeholder="mm/dd/aa" />
+                <label for="email">Email: </label> <input type="email" name="email" placeholder="usuario@servidor.com"  />
+                <label for="pasw">Contraseña: </label> <input type="password" name="pasw" placeholder="********" />
+
+            </form>
+            <button id="btn_registro">Registrar</button>
+            <button id="btn_modificar">Modificar</button>
+        </div>
+    </main>
+    
+    <script src="js/main.js"></script>
+    <script src="js/usuarios.js"></script>
+</body>
+</html>

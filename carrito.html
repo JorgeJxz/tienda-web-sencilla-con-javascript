@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="estilos.css" rel="stylesheet" type="text/css" >
+    <title>Carrito</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clientes</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <div id="carrito">
+            <h1>Carrito de Compras 🛒</h1>
+            <table id="tabla_ventas">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                        <th>Cumpleaños</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr id="cli_ventas">
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th>Referencia</th>
+                        <th>Descripción</th>
+                        <th>Familia</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                    <tbody id="contenido_ventas">
+                
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <th id="total_final">0,00 €</th>
+                        </tr>
+                    </tfoot>
+            </table>
+        </div>
+
+        <div id="panel_carrito">
+            <div id="sel_cliente" class="selets_car">
+                <form id="cli_form">
+                    <label>Seleccione un cliente 🧑:</label><br />
+                    <select name="clientes_select" id="clientes_select" form="cli_form"></select>
+                    <button id="btn_cli_sel" type="button"  class="btns_carrito">Seleccionar 🤚</button>
+                </form>
+            </div>
+
+            <div id="sel_producto" class="disabledbutton selets_car">
+                <form id="pro_form">
+                    <label>Catálogo📚:</label><br />
+                    <select name="productos_select" id="productos_select" form="pro_form">
+                        <option selected>Escoge un producto</option>
+                    </select>
+                    <label for="cantidad">Cantidad</label><input name="cantidad" type="number" id="cantidad" min="1"/>
+                    <label for="stock">Stock <span id="stock_disponible">-</span></label><br /><br />
+                    <button  type="button" id="btn_pro_agregar" class="btns_carrito">Agregar 🛒</button>
+                    <button  type="button" id="btn_pro_borrar"  class="btns_carrito">Borrar ❌</button>
+                    <button  type="button" id="btn_pro_guardar"  class="btns_carrito">Guardar 💾</button>
+                </form>
+                
+            </div>
+
+            <div id="sel_venta" class="selets_car">
+                <form id="vts_form">
+                    <label>Ventas realizadas</label><br />
+                    <select name="ventas_select" id="ventas_select" form="vts_form"></select>
+                    <button type="button" id="btn_vts_recuperar" class="btns_carrito">Recuperar ♻️</button>
+                    <button type="button" id="btn_vts_borrar" class="disabledbutton btns_carrito">Borrar ❌</button>
+                    <button type="button" id="btn_vts_actualizar" class="disabledbutton btns_carrito">Actualizar 💱</button>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+    
+
+    <script src="js/main.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

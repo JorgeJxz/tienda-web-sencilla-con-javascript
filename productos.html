@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Articulos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Clientes</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div id="productos">
+                <h1>Area de Productos</h1>
+                    <table id="tabla_productos">
+                        <thead>
+                            <tr>
+                                <th>Referencia</th>
+                                <th>Descripción</th>
+                                <th>Familia</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contenido_productos">
+            
+                        </tbody>
+                    </table>
+                </div>
+
+        <div id="formulario_productos">
+            <form action="perfil.html" id="form_registro_pro">
+                <label for="ref">Referencia: </label> <input type="text"  name="ref" placeholder="Ps4..."/>
+                <label for="des">Descripción: </label> <textarea name="des" id="des" cols="30" rows="10"></textarea>
+                <label for="fam">Familia: </label> <input type="text"  name="fam" placeholder="Cafeteras"/>
+                <label for="precio">Precio: </label> <input type="number" name="pre" placeholder="30"/>
+                <label for="stock:">Stock: </label> <input type="number" name="stock" placeholder="10"/>
+            </form>
+            <button id="btn_registro_pro">Registrar</button>
+            <button id="btn_modificar_pro">Modificar</button>
+
+
+        </div>
+    
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/productos.js"></script>
+</body>
+</html>

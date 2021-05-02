@@ -1,0 +1,228 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    background-color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.invalido
+{
+    box-shadow: 1px 1px 10px red;
+}
+
+.correcto
+{
+    box-shadow: 0px 0px 0px white;
+}
+
+header
+{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+main
+{
+    margin-top: 100px;
+}
+
+nav
+{ 
+    background-color: darkslategray;
+    width: 100%;
+    position: relative;
+    padding: 30px;
+}
+
+nav ul li
+{
+    display: inline;
+    list-style: none;
+    padding: 15px;
+    margin: 10px;
+    transition: all 1s; 
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+    transition: all 1s;   
+
+}
+
+
+nav ul li a:hover
+{
+    color: whitesmoke;
+}
+
+form
+{
+    width:300px;
+	margin:auto;
+}
+
+label
+{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+h2
+{
+    color: white;
+}
+
+input, textarea
+{
+    display: block;
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+table
+{
+    border-collapse: collapse;
+    background-color: white;
+}
+table tr td, table tr
+{
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+main
+{
+    width: 100%;
+    float: left;
+    padding: 20px;
+}
+
+#formulario_registro,#formulario_productos
+{
+    width: 300px;
+    height: auto;
+    float: left;
+    padding: 20px;
+    margin: 60px;
+    border-radius:10px;
+	background-color:#308269;
+
+}
+
+select
+{
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+button
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: cornsilk;
+    margin: 10px;
+}
+
+input
+{
+    margin: 10px;
+}
+
+#clientes,#productos
+{
+    width: 40%;
+    padding: 20px;
+    height: auto;
+    float: left;
+
+}
+
+
+.disabledbutton 
+{    
+    pointer-events: none;    
+    opacity: 0.4;
+}
+
+/*CARRITO*/
+
+.selets_car
+{
+    display: block;
+    width: 100%;
+    float: right;
+	margin:0 auto;
+    padding: 20px;
+
+}
+
+#panel_carrito
+{
+    width: 20%;
+    background-color: #308269;
+    float: left;
+    border-radius: 20px;
+    margin: 60px;
+    align-content: center;
+}
+
+.btns_carrito
+{
+    margin: 10px;
+}
+
+label
+{
+    padding: 10px;
+}
+
+#carrito
+{
+    padding: 20px;
+    width: 50%;
+    float: left;
+}
+ /****TABLA****/
+
+ th {
+	background-color: limegreen;
+	color: black;
+}
+
+tr:nth-child(even) {
+	background-color: lightgreen;
+}
+
+tr:hover
+{
+    background-color: darkcyan;
+}
+
+table
+{
+    background-color: lightgreen;
+    empty-cells: hide;
+    border: 0px;
+    border-collapse: separate;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1em;
+}
