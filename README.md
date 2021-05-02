@@ -9,7 +9,7 @@ Para el manejo de datos utilizamos JSON y peticiones AJAX.
 
 ### Pre-requisitos 📋 e Instalación 🔧
 
-Para que la pagina funcione correctamente debe ser desplegada en un servidor.
+Para que la página funcione correctamente debe ser desplegada en un servidor.
 
 ## Construido con 🛠️
 
